@@ -2,8 +2,8 @@ package com.mcfarevee.groceries;
 
 public class Weight {
 
-  Unit unit;
-  int amount;
+  public Unit unit;
+  public int amount;
 
   public Weight(Unit unit, int amount) {
     this.unit = unit;

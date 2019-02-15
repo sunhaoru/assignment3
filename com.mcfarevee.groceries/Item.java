@@ -12,5 +12,7 @@ public interface Item {
   public Weight getWeight();
 
   public int getPrice();
+  
+  public String getName();
 
 }

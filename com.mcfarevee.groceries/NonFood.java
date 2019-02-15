@@ -1,6 +1,6 @@
 package com.mcfarevee.groceries;
 
-public class NonFood {
+public class NonFood implements Item{
   String name;
   Weight weight;
   int price;
@@ -23,8 +23,14 @@ public class NonFood {
     return this.price;
   }
 
-  public boolean equals(NonFood other) {
-    return this.equals(other);
+  public boolean equals(Item other) {
+    if (other instanceof NonFood) {
+      return this.equals(other);
+    } else
+      return false;
+  }
+  public String getName() {
+    return this.name;
   }
 }
 

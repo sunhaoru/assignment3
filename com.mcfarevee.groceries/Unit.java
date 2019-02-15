@@ -70,22 +70,24 @@ public class Unit {
   /**
    * Standard unit: Pounds
    */
-  public static final Unit POUND = new Unit("pound", "lb.", "pounds");
+  public static final Unit POUNDS = new Unit("pound", "lb.", "pounds");
 
   /**
    * Standard unit: Ounces
    */
-  public static final Unit OUNCE = new Unit("ounce", "oz.", "ounces");
+  public static final Unit OUNCES = new Unit("ounce", "oz.", "ounces");
 
   /**
    * Standard unit: Kilograms
    */
-  public static final Unit KILOGRAM = new Unit("kilogram", "kg.", "kilograms");
+  public static final Unit KILOGRAMS = new Unit("kilogram", "kg.", "kilograms");
 
   /**
    * Standard unit: Grams
    */
-  public static final Unit GRAM = new Unit("gram", "gm.", "grams");
+  public static final Unit GRAMS = new Unit("gram", "gm.", "grams");
+
+
 
 } // class Unit
 

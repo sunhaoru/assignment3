@@ -2,8 +2,8 @@ package com.mcfarevee.groceries;
 
 public class ManyPackages implements Item {
 
-  Package type;
-  int count;
+  public Package type;
+  public int count;
 
   public ManyPackages(Package type, int count) {
     this.type = type;
@@ -22,7 +22,14 @@ public class ManyPackages implements Item {
     return this.count * this.type.getPrice();
   }
 
-  public boolean equals(ManyPackages other) {
-    return this.equals(other);
+  public boolean equals(Item other) {
+    if (other instanceof ManyPackages) {
+      return this.equals(other);
+    } else
+      return false;
+  }
+  
+  public String getName() {
+    return this.type.name;
   }
 }
